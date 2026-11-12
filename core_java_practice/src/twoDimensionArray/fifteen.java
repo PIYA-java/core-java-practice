@@ -1,0 +1,26 @@
+package twoDimensionArray;
+
+public class fifteen {
+
+	public static void main(String[] args) {
+		int a[][]= {{1,0,0},
+				    {0,1,0},
+				    {0,0,1}};
+		boolean identity=true;
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a.length;j++)
+			{
+				if(i==j && a[i][j]!=1)
+					identity=false;
+				if(i!=j && a[i][j]!=0)
+				identity=false;
+			}
+		}
+		if(identity)
+			System.out.println("Identity matrix");
+		else
+		System.out.println("Non identity matrix");
+				}
+
+}
